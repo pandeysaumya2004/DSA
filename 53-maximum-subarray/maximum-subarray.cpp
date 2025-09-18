@@ -14,12 +14,21 @@ public:
 
         // }
         // return maxi;
-        int maxi=nums[0];
-        int current_sum=nums[0];
-        for(int i=1;i<nums.size();i++){
-            current_sum =max(nums[i],current_sum+nums[i]);
-            maxi=max(maxi,current_sum);
-        }
-        return maxi;
+
+        // int maxi=nums[0];
+        // int current_sum=nums[0];
+        // for(int i=1;i<nums.size();i++){
+        //     current_sum =max(nums[i],current_sum+nums[i]);
+        //     maxi=max(maxi,current_sum);
+        // }
+        // return maxi;
+
+       int maxi = nums[0];
+       int current_sum = nums[0];
+       for(int i=1;i<nums.size();i++){
+        current_sum= max(nums[i],current_sum+nums[i]);
+        maxi= max(maxi,current_sum);
+       }
+       return maxi;
     }
 };
